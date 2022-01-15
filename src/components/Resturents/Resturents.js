@@ -27,7 +27,7 @@ import './Reasturents.css'
             <br></br>
            <div className='meals'>
            {
-                 meals.map(meal=><Meal meal={meal}><Row xs={1} md={4} className="g-4">
+                 meals.map(meal=><Meal meal={meal} key={meal.idMeal}><Row xs={1} md={4} className="g-4">
                  
                  </Row></Meal>)
             }

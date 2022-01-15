@@ -6,6 +6,7 @@ import About from './components/About/About';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Resturents from './components/Resturents/Resturents';
+import MealsMore from './MealsMore/MealsMore';
 import NotFound from './Notfound/NotFound';
 
 function App() {
@@ -26,11 +27,12 @@ function App() {
          <Route path="/resturents">
            <Resturents></Resturents>
          </Route>
+         <Route exact path="/meals/:mealsMoreId">
+          <MealsMore></MealsMore>
+         </Route>
          <Route path="*">
            <NotFound></NotFound>
          </Route>
-         
-
        </Switch>
      </Router>
    </div>
